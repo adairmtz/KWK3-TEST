@@ -103,26 +103,40 @@ function scrollHide(){
 	};
 
 
+
+	var divGD = ons.GestureDetector(document.querySelector('#carru_1'));
+
+	divGD.on('dragend', function(event){
+		console.log("ya casi me sale");
+
+		$(document).off('dragend', '#page2', function(event) {});
+
+
+
+	});
+
+
 	
 
 
 
-	 $(document).on('dragup dragdown', '#page2', function(event) {
+	 $(document).on('dragup dragdown dragend', '#page2', function(event) {
 
 	 	
-    
+    	
      
 
-      if (event.type == 'dragup' || event.type == 'dragdown'){
+      if (event.type == 'dragend'){
       		console.log(event.type);
-      		window.animatelo.fadeOutDown('.tab-bar', options);
+        
+        	window.animatelo.fadeInUp('.tab-bar', options2);
       	}
 
       	else {
 
-      		console.log(event.type);
-        
-        	window.animatelo.fadeInUp('.tab-bar', options2);
+      
+        	console.log(event.type);
+      		window.animatelo.fadeOutDown('.tab-bar', options);
         	
       	}
     });
