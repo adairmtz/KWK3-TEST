@@ -1,0 +1,199 @@
+
+#start_back{
+	width: 100%;
+	min-height: 100%;
+	position: fixed;
+	background-color: black;
+	overflow: hidden;
+	background-image: url('../img/imagen_01.png');
+	background-size: cover;
+	
+  	z-index: -1;
+}
+
+#start_back_img{
+	width: 100%;
+
+}
+
+
+#logo_start{
+	width: 100%;
+    height: auto;
+    margin: 10% 0;
+    min-height: 100px;
+}
+
+.kiwiik-imagotipo {
+    width: 60%;
+    margin: 0 20%;
+
+}
+
+.button_p {
+    display: inline-block;
+    background: #0076ff;
+    font-family: -apple-system,'Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 600;
+    user-select: none;
+    padding: 4px 10px;
+    font-size: 17px;
+    line-height: 32px;
+    color: #fff;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.button-outline_white{
+	background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    width: 92%;
+    height: 30px;
+    margin-bottom: 10px;
+    
+}
+
+.button-outline_white i{
+	margin-right: 1%;
+	text-align: center;
+	width: 20%;
+}
+
+
+#buttons_init{
+    position: absolute;
+    top: auto;
+    bottom: 10%;
+    width: 94%;
+    margin: 0 3%;
+}
+
+.button_txt{
+    display: inline-block;
+    
+    font-family: -apple-system,'Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+    
+    font-weight: 600;
+    
+    padding: 4px 10px;
+    font-size: 14px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.95);
+    text-align: center;
+    width: 92%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+
+#page1 > .page__background{
+    background-color: black;
+}
+
+.logo_home{
+    height: 75%;
+    padding:5px; 
+}
+.tabbar { background-color: #212121 !important;}
+
+
+:checked+.tabbar__button {
+    color: white !important;
+    
+}
+
+.tab-bar {
+    background-color: #212121;
+    box-shadow: 0px -1px 4px 0px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    min-height: 56px;
+    max-height: 56px;
+    color: white;
+}
+
+.tabbar_btn {
+    display: inline-block;
+    text-align: center;
+    width: 19%;
+    line-height: 1px;
+    font-size: 10px;
+    height: 100%;
+    min-height: 45px;
+    margin: 0;
+    vertical-align: middle;
+    padding-top: 10px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tabbar_btn > i{
+    font-size: 20px !important;
+}
+
+.tb_inactive{
+    color: gray !important;
+}
+
+.carru{
+    width: 90%;
+    height: auto;
+    margin: 10px auto 0;
+
+}
+
+.owl-carousel .owl-stage-outer {
+
+    overflow: visible !important;
+}
+
+.carru_cont {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.carru2{
+    width: 40%;
+    height: auto;
+    margin: 20px 0 0 5%;
+
+}
+
+.carru_cont2 {
+    border-radius: 10px;
+    max-width: 300px;
+    width: 200px;
+    min-width: 200px;
+    height: auto;
+    overflow: hidden;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.5);
+    background-color: yellow;
+}
+
+.carru2 > .owl-item{
+    margin-right: -50px !important;
+}
+
+.page__background{
+    background-color: white !important;
+}
+
+#page2 >.page__content{
+    overflow: hidden;
+}
+
+
+
+
+

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+  <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+  
+
+
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <link rel="stylesheet" href="css/onsenui.css">
+  <link rel="stylesheet" href="css/onsen-css-components.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  
+  
+  <script src="js/onsenui.min.js"></script>
+
+  <script src="js/jquery-3.3.1.min.js"> </script>
+  <script src="js/owl.carousel.min.js"></script>
+
+  
+  
+
+
+  <title>Hello World</title>
+</head>
+
+
+
+
+
+
+
+<body>
+
+
+
+
+  <ons-navigator swipeable id="myNavigator" page="page1.html"></ons-navigator>
+
+  <template id="page1.html">
+    <ons-page id="page1">
+      <div id="start_back">
+        <img id="start_back_img" src="img/vineta.png" alt="">
+      </div>
+
+      <div id="logo_start">
+        <img src="img/kiwiik-imagotipoconslogan-500-px.png"
+        srcset="img/kiwiik-imagotipoconslogan-500-px@2x.png 2x,
+        img/kiwiik-imagotipoconslogan-500-px@3x.png 3x"
+        class="kiwiik-imagotipo">
+      </div>
+
+      <section id="buttons_init">
+        <a class="button_p button-outline_white"><i class="fab fa-facebook-f"></i> Facebook</a>
+
+
+        <a class="button_p button-outline_white"><i <i class="fab fa-google"></i></i> Google</a>
+        
+
+        <a class="button_p button-outline_white">Correo</a>
+
+        <a id="invitado" class="button_txt">CONTINUAR COMO  INVITADO</a>
+
+
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+    </ons-page>
+  </template>
+
+  <template id="page2.html">
+    <ons-page id="page2">
+      <ons-toolbar style="background: #212121;">
+        <div class="left">
+          <ons-toolbar-button icon="fa-bars" style="color: white"></ons-toolbar-button>
+        </div>
+
+        <div class="center"><img class="logo_home" src="img/logo_blanco.png"></div>
+
+        <div class="right">
+         <ons-toolbar-button icon="fa-search" style="color: white"></ons-toolbar-button>
+         <ons-toolbar-button icon="fa-shopping-cart" style="color: white"></ons-toolbar-button>
+       </div>
+     </ons-toolbar>
+
+        <a  id="perro" class="button">Correo</a>
+        <div class="item"><img src="img/01.png" alt=""></div>
+        <div class="item"><img src="img/02.png" alt=""></div>
+        <div class="item"><img src="img/01.png" alt=""></div>
+        <div class="item"><img src="img/02.png" alt=""></div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+<div class="tab-bar">
+      
+    </div>
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  </ons-page>
+</template>
+
+
+
+<!-- <script type="text/javascript" src="cordova.js"></script> -->
+
+<script type="text/javascript" src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
