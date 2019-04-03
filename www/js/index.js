@@ -89,10 +89,10 @@ function start_bck(){
 
 function scrollHide(){
 
-	var divGD = ons.GestureDetector(document.querySelector('#page2'));
+	
 
 	var options = {
-  		duration: 250
+  		duration: 100
   	
   	
 	};
@@ -103,22 +103,51 @@ function scrollHide(){
 	};
 
 
+	
 
-	divGD.on('dragup', function(event) {
+
+
+	 $(document).on('dragup dragdown', '#page2', function(event) {
+
+	 	
+    
+     
+
+      if (event.type == 'dragup' || event.type == 'dragdown'){
+      		console.log(event.type);
+      		window.animatelo.fadeOutDown('.tab-bar', options);
+      	}
+
+      	else {
+
+      		console.log(event.type);
+        
+        	window.animatelo.fadeInUp('.tab-bar', options2);
+        	
+      	}
+    });
+
+
+
+	/*divGD.on('dragup', function(event) {
 		console.log("inicia el scroll");
 		
 		 window.animatelo.fadeOutDown('.tab-bar', options);
+		 	console.log(event.type);
+		 if (event.type !== 'dragup') {
+        	console.log("perro");
+      }
 
 	});
 
-	divGD.on('dragend', function(event) {
+	divGD.off('dragup', function(event) {
 
 		console.log("termina");
 		window.animatelo.fadeInUp('.tab-bar', options2);
 		
 
 		
-	});
+	});*/
 
 }
 
