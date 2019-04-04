@@ -151,6 +151,28 @@
     padding-bottom: 80px;
 }
 
+#page3 >.page__background{
+    background-color: white !important;
+}
+
+#page3 >.page__content {
+    padding-bottom: 80px;
+}
+
+.tab-bar2 {
+    background-color: #fff;
+    box-shadow: 0px -1px 4px 0px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    min-height: 56px;
+    max-height: 56px;
+    color: #212121;
+}
+
+
 
 .carrusel_container{
     width: 100%;
@@ -194,6 +216,17 @@
     padding-bottom: 0px;
 }
 
+#carrusel_4{
+    width: 45%;
+    margin: 0 0 0 5%;
+    padding-bottom: 0px;
+}
+
+#carrusel_5{
+    width: 20%;
+    margin: 0 0 0 5%;
+    padding-bottom: 0px;
+}
 
 
 
@@ -202,7 +235,7 @@
 .sectionTitle{
     width: 100%;
     width: auto;
-    font-size: 17px;
+    
     font-weight: normal;
     color: rgba(0,0,0,0.6);
     letter-spacing: 0.5px;
@@ -212,9 +245,9 @@
 .sectionTitle p {
     display: inline-block;
     width: 48%;
-   
     margin: 0;
     padding-left: 5%;
+    font-size: 20px;
 }
 .sectionTitle a {
     display: inline-block;
@@ -225,6 +258,18 @@
     font-weight: bold;
     line-height: 1.87;
     font-size: 15px;
+}
+
+.oferta_especial{
+    width: 90%;
+    height: auto;
+    padding: 5% 0;
+    margin: 10px auto 0;
+}
+
+.oferta_especial img{
+    width: 100%;
+    
 }
 
 
