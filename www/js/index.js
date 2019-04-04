@@ -23,13 +23,13 @@ document.addEventListener('init', function(event) {
 		carrusel4();
 		carrusel5();
 
+		navigate();
+
 		$('.c2foto, .c1foto, .sectionTitle a, .c3foto, .c5foto, .oferta_especial').click(function(){
 			alert("No hay nada pillín");
 		})
 
-		document.querySelector('#credito').onclick = function() {
-			document.querySelector('#myNavigator').pushPage('page3.html', {data: {title: 'Page 3'}});
-		};
+		
 
 
 	} else if (page.id === 'page3') {
@@ -40,13 +40,13 @@ document.addEventListener('init', function(event) {
 		carrusel4();
 		carrusel5();
 
+		navigate2();
+
 		$('.c2foto, .c1foto, .sectionTitle a, .c3foto, .c5foto, .oferta_especial').click(function(){
 			alert("No hay nada pillín");
-		})
+		});
 
-		document.querySelector('#credito').onclick = function() {
-			document.querySelector('#myNavigator').pushPage('page3.html', {data: {title: 'Page 3'}});
-		};
+		
 
 
 	}
@@ -225,7 +225,19 @@ function carrusel5(){
 
 };
 
+function navigate2(){
+	$('.tab-bar2').click(function(){
+		document.querySelector('#myNavigator').pushPage('page2.html', {data: {title: 'Page 2'}});
+	});
+}
 
+function navigate(){
+
+	$('.tab-bar').click(function(){
+		document.querySelector('#myNavigator').pushPage('page3.html', {data: {title: 'Page 3'}});
+	});
+	
+}
 
 
 
