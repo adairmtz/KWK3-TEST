@@ -115,7 +115,8 @@ function start_bck(){
 function scrollHide(){
 
 	var options = {
-		duration: 500
+		duration: 1000,
+	
 
 
 	};
