@@ -16,7 +16,7 @@ document.addEventListener('init', function(event) {
 
 
 	} else if (page.id === 'page2') {
-		scrollHide();
+		//scrollHide();
 		carrusel1();
 		carrusel2();
 		carrusel3();
@@ -26,7 +26,7 @@ document.addEventListener('init', function(event) {
 		navigate();
 
 		$('.c2foto, .c1foto, .sectionTitle a, .c3foto, .c5foto, .oferta_especial').click(function(){
-			alert("No hay nada pillín");
+			alert("No hay nada Martha");
 		})
 
 		
@@ -43,7 +43,7 @@ document.addEventListener('init', function(event) {
 		navigate2();
 
 		$('.c2foto, .c1foto, .sectionTitle a, .c3foto, .c5foto, .oferta_especial').click(function(){
-			alert("No hay nada pillín");
+			alert("No hay nada Oli");
 		});	
 
 	}
@@ -59,7 +59,7 @@ document.addEventListener('init', function(event) {
 		navigate3();
 
 		$('.c2foto, .c1foto, .sectionTitle a, .c3foto, .c5foto, .oferta_especial').click(function(){
-			alert("No hay nada pillín");
+			alert("No hay nada pirro");
 		});
 
 		
