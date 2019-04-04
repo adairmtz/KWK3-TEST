@@ -17,13 +17,16 @@ document.addEventListener('init', function(event) {
 
 	} else if (page.id === 'page2') {
 		scrollHide();
-		carousel();
-		carousel2();
+		carrusel1();
+		carrusel2();
+		carrusel3();
 
-		document.querySelector('#credito').onclick = function() {
-			document.querySelector('#myNavigator').pushPage('page3.html', {data: {title: 'Page 3'}});
+		$('.c2foto, .c1foto, .sectionTitle a, .c3foto').click(function(){
+			alert("No hay nada pillín");
+		})
 
-		};
+		
+		
 
 
 	}
@@ -89,109 +92,88 @@ function start_bck(){
 
 function scrollHide(){
 
-	
-
 	var options = {
-  		duration: 100
-  	
-  	
+		duration: 500
+
+
 	};
 
 	var options2 = {
-  		duration: 250,
-  		delay: 100
+		duration: 500,
+		delay: 500
 	};
 
 
 
-	var divGD = ons.GestureDetector(document.querySelector('#carru_1'));
+	$('.page__content').scroll(function() {
 
-	divGD.on('dragend', function(event){
-		console.log("ya casi me sale");
-
-		$(document).off('dragend', '#page2', function(event) {});
-
-
-
+		window.animatelo.fadeOutDown('.tab-bar', options);
+		clearTimeout($.data(this, 'scrollTimer'));
+		$.data(this, 'scrollTimer', setTimeout(function() {
+        // do something
+        console.log("Haven't scrolled in 250ms!");
+        window.animatelo.fadeInUp('.tab-bar', options2);
+    }, 250));
 	});
 
 
-	
+};
 
 
 
-	 $(document).on('dragup dragdown dragend', '#page2', function(event) {
-
-	 	
-    	
-     
-
-      if (event.type == 'dragend'){
-      		console.log(event.type);
-        
-        	window.animatelo.fadeInUp('.tab-bar', options2);
-      	}
-
-      	else {
-
-      
-        	console.log(event.type);
-      		window.animatelo.fadeOutDown('.tab-bar', options);
-        	
-      	}
-    });
-
-
-
-	/*divGD.on('dragup', function(event) {
-		console.log("inicia el scroll");
-		
-		 window.animatelo.fadeOutDown('.tab-bar', options);
-		 	console.log(event.type);
-		 if (event.type !== 'dragup') {
-        	console.log("perro");
-      }
-
-	});
-
-	divGD.off('dragup', function(event) {
-
-		console.log("termina");
-		window.animatelo.fadeInUp('.tab-bar', options2);
+function carrusel1(){
+	console.log('carga carrusel 1');
+	$('.ca1').owlCarousel({
+		loop:true,
+		margin:50,
+		nav:false,
+		items: 1,
+		dotsEach: true,
+		autoplay: true,
+		stagePadding: 5,
+		dots:true,
 		
 
-		
-	});*/
-
-}
-
-
-function carousel(){
-	$('.oneC').owlCarousel({
-    loop:true,
-    margin:50,
-    nav:false,
-    items: 1,
-    dotsEach: true,
-    autoplay: true,
-    stagePadding: 5
-       
 	})
 
-}
+};
 
-function carousel2(){
-	$('.twoC').owlCarousel({
-    loop:false,
-    margin: 70,
-    nav:false,
-    items: 1,
-    dotsEach: false,
-    dots: false,
-    autoplay: false,
-    stagePadding: 5
-});
-       
+function carrusel2(){
+	console.log('carga carrusel 2');
+	$('.ca2').owlCarousel({
+		loop:false,
+		margin:10,
+		nav:false,
+		items: 1,
+		stagePadding: 5,
+		dots:false,
+		animateIn: true,
+		animateOut: true
 
-}
+	})
+
+};
+
+function carrusel3(){
+	console.log('carga carrusel 3');
+	$('.ca3').owlCarousel({
+		loop:false,
+		margin:10,
+		nav:false,
+		items: 1,
+		stagePadding: 5,
+		dots:false,
+		animateIn: true,
+		animateOut: true
+
+	})
+
+};
+
+
+
+
+
+
+
 
