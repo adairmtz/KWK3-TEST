@@ -44,6 +44,22 @@ document.addEventListener('init', function(event) {
 
 		$('.c2foto, .c1foto, .sectionTitle a, .c3foto, .c5foto, .oferta_especial').click(function(){
 			alert("No hay nada pillín");
+		});	
+
+	}
+
+	else if (page.id === 'page4') {
+		scrollHide();
+		carrusel1();
+		carrusel2();
+		carrusel3();
+		carrusel4();
+		carrusel5();
+
+		navigate3();
+
+		$('.c2foto, .c1foto, .sectionTitle a, .c3foto, .c5foto, .oferta_especial').click(function(){
+			alert("No hay nada pillín");
 		});
 
 		
@@ -226,9 +242,15 @@ function carrusel5(){
 
 };
 
+function navigate3(){
+	$('.tab-bar3').click(function(){
+		document.querySelector('#myNavigator').pushPage('page2.html', {data: {title: 'Page 2'}});
+	});
+}
+
 function navigate2(){
 	$('.tab-bar2').click(function(){
-		document.querySelector('#myNavigator').pushPage('page2.html', {data: {title: 'Page 2'}});
+		document.querySelector('#myNavigator').pushPage('page4.html', {data: {title: 'Page 4'}});
 	});
 }
 

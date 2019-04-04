@@ -173,6 +173,20 @@
 }
 
 
+.tab-bar3 {
+    background-color: #fff;
+    box-shadow: 0px -1px 4px 0px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    min-height: 56px;
+    max-height: 56px;
+    color: #212121;
+}
+
+
 
 .carrusel_container{
     width: 100%;
@@ -206,6 +220,13 @@
     box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     overflow: hidden;
+}
+
+
+.carrusel_container3{
+    width: 100%;
+    min-height: 10px;
+    overflow-x: hidden;
 }
 
 
